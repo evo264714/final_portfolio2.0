@@ -286,6 +286,8 @@ a:hover {
   color: var(--color-white);
 }
 
+
+
 .btn {
   width: max-content;
   display: inline-block;
@@ -296,7 +298,6 @@ a:hover {
   border: 1px solid var(--color-primary) !important;
   transition: var(--transition);
 }
-
 .btn:hover {
   background: var(--color-white)!important;
   color: var(--color-bg)!important;
@@ -305,8 +306,8 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-primary)!important;
-  color: var(--color-bg)!important;
+  background: var(--color-bg-variant)!important;
+  color: var(--color-white)!important;
 }
 
 img {

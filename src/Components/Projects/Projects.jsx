@@ -9,10 +9,16 @@ const Projects = () => {
 
     const { theme } = useContext(ThemeContext);
     return (
-        <section className='my-5' id='portfolio'>
-            <h1 className='text-center fw-bold my-5' style={{ color: theme.primary }}>Projects</h1>
+        <section style={{ backgroundColor: theme.secondary }} className='my-5' id='portfolio'>
+            <div className="line-styling">
+                <div className="style-circle" style={{ backgroundColor: theme.primary }}></div>
+                <div className="style-circle" style={{ backgroundColor: theme.primary }}></div>
+                <div className="style-line" style={{ backgroundColor: theme.primary }}></div>
+            </div>
+            <h1 className='my-5 h1_tag_projects' style={{ color: theme.primary }}>Projects</h1>
 
             <div className='container portfolio_container'>
+
                 <article className='portfolio_item'>
                     <div className="portfolio_item-image">
                         <img src={IMG1} alt="" />

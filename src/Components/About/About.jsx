@@ -25,7 +25,7 @@ function About() {
                 </div>
             </div>
             
-            <h1 className='text-center fw-bold my-5' style={{ color: theme.primary }}>Skills</h1>
+            
         </div>
 
     )

@@ -10,14 +10,14 @@
     flex-direction: column;
     gap: 1.2rem;
 }
-
 .contact_option{
-    background: var(--color-primary);
+    background: var(--color-bg);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    color: var(--color-white);
 }
 
 .contact_option:hover{
@@ -35,7 +35,51 @@
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
+    color: var(--color-light);
+    text-decoration: none;
 }
+
+.contact_option a:hover{
+    color: var(--color-primary)
+}
+
+.contact{
+    position: relative;
+}
+
+.line-styling {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0px; 
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-styling .style-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.line-styling .style-line {
+    width: 95%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.h1_tag_contact{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem !important;
+    text-align: center;
+    height: 159px;
+    padding-top: 60px;    
+}
+
 
 form{
     display: flex;
@@ -48,12 +92,14 @@ input, textarea{
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid var(--color-primary);
     resize: none;
     color: var(--color-white);
 }
 
-/* Media queries for tablet Screen */
+input::placeholder, textarea::placeholder {
+    color: var(--color-light); 
+}
 
 @media screen and (max-width: 1024px) {
    .container.contact_container{
@@ -61,8 +107,6 @@ input, textarea{
     gap: 2rem;
    }
 }
-
-/* Media queries for mobile Screen */
 
 @media screen and (max-width: 576px) {
     .contact_container{

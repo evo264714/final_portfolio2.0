@@ -5,7 +5,6 @@ import './Skills.css'
 import ThemeContextProvider, { ThemeContext } from '../Data/ThemeContext';
 import { skillsData } from '../Data/Skills';
 import { skillsImage } from '../Data/SkillsImg';
-import ParticleBg from '../ParticleBg/ParticleBg';
 
 const Skills = () => {
 
@@ -18,11 +17,17 @@ const Skills = () => {
     }
 
     return (
-        <div className="skills" >
+        <div className="skills" style={{backgroundColor: theme.secondary}} >
+            <div className="line-styling">
+              <div className="style-circle" style={{backgroundColor: theme.primary}}></div>
+              <div className="style-circle" style={{backgroundColor: theme.primary}}></div>
+              <div className="style-line" style={{backgroundColor: theme.primary}}></div>
+            </div>
+            <h1 className='h1_tag text-center text-5xl fw-bold my-5' style={{ color: theme.primary }}>Skills</h1>
             <div className="skillsContainer">
-                
+
                 <div className="skill--scroll">
-                
+
                     <Marquee
                         gradient={false}
                         speed={80}

@@ -9,7 +9,12 @@ const Contact = () => {
     const { theme } = useContext(ThemeContext);
     return (
         <section id='contact'>
-            <h2 className='text-center fw-bold my-5' style={{ color: theme.primary }}>Contact Me</h2>
+            <div className="line-styling">
+                <div className="style-circle" style={{ backgroundColor: theme.primary }}></div>
+                <div className="style-circle" style={{ backgroundColor: theme.primary }}></div>
+                <div className="style-line" style={{ backgroundColor: theme.primary }}></div>
+            </div>
+            <h2 className='text-center h1_tag_contact fw-bold my-5' style={{ color: theme.primary }}>Contact Me</h2>
 
             <div className='container contact_container'>
                 <div className="contact_options">
@@ -36,7 +41,7 @@ const Contact = () => {
                     <input type="text" name='name' placeholder='Your Full Name' required />
                     <input type="email" name='email' placeholder='Your Email' required />
                     <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-                    <button type='submit'className='btn btn-primary'>Send Message</button>
+                    <button type='submit' className='btn'>Send Message</button>
                 </form>
             </div>
         </section>

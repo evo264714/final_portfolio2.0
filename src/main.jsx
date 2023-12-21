@@ -7,7 +7,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Main from './Layouts/Main';
-import Footer from './Components/Footer/Footer';
 const router = createBrowserRouter([
   {
     path: "/",
